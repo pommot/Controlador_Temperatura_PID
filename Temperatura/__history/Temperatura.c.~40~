@@ -1,0 +1,38 @@
+//#include <Temperatura.h>
+#include <16F877A.h>
+#device adc=8
+#FUSES HS                       //High speed Osc (> 4mhz for PCM/PCH) (>10mhz for PCD)
+#FUSES NOPUT                    //No Power Up Timer
+#FUSES NOPROTECT                //Code not protected from reading
+#FUSES NODEBUG                  //No Debug mode for ICD
+#FUSES NOBROWNOUT               //No brownout reset
+#FUSES NOLVP                    //No low voltage prgming, B3(PIC16) or B5(PIC18) used for I/O
+#FUSES NOCPD                    //No EE protection
+#FUSES NOWRT                    //Program memory not write protected
+
+#use delay(clock=20000000)
+#use rs232(baud=9600,parity=N,xmit=PIN_C6,rcv=PIN_C7,bits=8,stream=Wireless)
+
+void main()
+{
+int j =0;
+char temp[10];
+
+   while(j<10)
+   {
+for
+puts("1\n");
+puts("2\n");
+puts("3\n");
+puts("4\n");
+puts("5\n");
+puts("6\n");
+puts("7\n");
+puts("8\n");
+puts("9\n");
+j++;
+
+      //TODO: User Code
+   }
+
+}

@@ -1,0 +1,203 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015     CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020     @INTERRUPT_AREA
+021     @INTERRUPT_AREA
+022     @INTERRUPT_AREA
+023     @INTERRUPT_AREA
+024     @INTERRUPT_AREA
+025     @INTERRUPT_AREA
+026     @INTERRUPT_AREA
+027     @INTERRUPT_AREA
+028     @INTERRUPT_AREA
+029     @INTERRUPT_AREA
+02A     @INTERRUPT_AREA
+02B-02C somatorioPID
+02D-02E proporcional
+02F-030 integrativo
+031-032 derivativo
+033-034 tempRef
+035-036 erro
+037-038 rpmCooler
+039-03A contador
+03B-03C ultimaTemperatura
+03D-03E tempLM35
+03F     @TRIS_C
+040-041 @sprintf_string
+042-055 MAIN.strTempLM35
+056-069 MAIN.strTempRef
+06A     MAIN.@SCRATCH1
+06B     MAIN.@SCRATCH2
+06C     MAIN.@SCRATCH3
+06D     MAIN.@SCRATCH4
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07F     @INTERRUPT_AREA
+09C.6   C1OUT
+09C.7   C2OUT
+0A0-0B3 MAIN.strErro
+0B4-0B5 @MULS1616.P1
+0B4-0B5 @PRINTF_LD_659.P2
+0B4-0B5 @PRINTF_LD_613.P3
+0B4     lcd_ini.conta
+0B4     @PSTRINGCN7_613.P1
+0B4     @PSTRINGR_1.@SCRATCH1
+0B5     lcd_ini.@SCRATCH1
+0B5     @PSTRINGCN7_613.@SCRATCH1
+0B5     @PSTRINGR_1.@SCRATCH2
+0B6-0B7 @ITOF.P1
+0B6-0B7 @MULS1616.P2
+0B6-0B9 @MULFF.P3
+0B6     @PSTRINGCN7_613.@SCRATCH2
+0B6     @PRINTF_LD_613.@SCRATCH1
+0B6     @PRINTF_LD_659.@SCRATCH1
+0B7     @PSTRINGCN7_613.@SCRATCH3
+0B7     @PRINTF_LD_613.@SCRATCH2
+0B7     @PRINTF_LD_659.@SCRATCH2
+0B8-0B9 @SITOF.P1
+0B8-0BB @ADDFF.P2
+0B8-0BB @SFTOI.P3
+0B8     @MULS1616.@SCRATCH1
+0B8     @PSTRINGCN7_613.@SCRATCH4
+0B8     @PRINTF_LD_613.@SCRATCH3
+0B8     @PRINTF_LD_659.@SCRATCH3
+0B9     @MULS1616.@SCRATCH2
+0B9     @PRINTF_LD_613.@SCRATCH4
+0B9     @PRINTF_LD_659.@SCRATCH4
+0BA-0BD @MULFF.P1
+0BA     @PRINTF_LD_613.@SCRATCH5
+0BA     @PRINTF_LD_659.@SCRATCH5
+0BB     @PRINTF_LD_613.@SCRATCH6
+0BB     @PRINTF_LD_659.@SCRATCH6
+0BC-0BF @ADDFF.P1
+0BC     @PRINTF_LD_613.@SCRATCH7
+0BC     @PRINTF_LD_659.@SCRATCH7
+0BD     lcd_escreve.c
+0BD     @SPRINTF.P1
+0BE     @delay_ms1.P1
+0BE     lcd_pos_xy.x
+0BE     @MULFF.@SCRATCH1
+0BF     lcd_pos_xy.y
+0BF     @MULFF.@SCRATCH2
+0C0     lcd_pos_xy.endereco
+0C0     @MULFF.@SCRATCH3
+0C0     @ADDFF.@SCRATCH1
+0C1     lcd_pos_xy.@SCRATCH1
+0C1     @MULFF.@SCRATCH4
+0C1     @ADDFF.@SCRATCH2
+0C2     lcd_envia_byte.endereco
+0C2     @MULFF.@SCRATCH5
+0C2     @ADDFF.@SCRATCH3
+0C3     lcd_envia_byte.dado
+0C3     @ADDFF.@SCRATCH4
+0C4     lcd_envia_byte.@SCRATCH1
+0C4     @ADDFF.@SCRATCH5
+0C5     lcd_envia_nibble.dado
+0C5     @ADDFF.@SCRATCH6
+0C6     @ADDFF.@SCRATCH7
+0C7     @ADDFF.@SCRATCH8
+0FF     @INTERRUPT_AREA
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+17F     @INTERRUPT_AREA
+1FF     @INTERRUPT_AREA
+27F     @INTERRUPT_AREA
+2FF     @INTERRUPT_AREA
+37F     @INTERRUPT_AREA
+3FF     @INTERRUPT_AREA
+47F     @INTERRUPT_AREA
+4FF     @INTERRUPT_AREA
+57F     @INTERRUPT_AREA
+5FF     @INTERRUPT_AREA
+67F     @INTERRUPT_AREA
+6FF     @INTERRUPT_AREA
+77F     @INTERRUPT_AREA
+7FF     @INTERRUPT_AREA
+87F     @INTERRUPT_AREA
+8FF     @INTERRUPT_AREA
+97F     @INTERRUPT_AREA
+9FF     @INTERRUPT_AREA
+A7F     @INTERRUPT_AREA
+AFF     @INTERRUPT_AREA
+B7F     @INTERRUPT_AREA
+BFF     @INTERRUPT_AREA
+C7F     @INTERRUPT_AREA
+CFF     @INTERRUPT_AREA
+D7F     @INTERRUPT_AREA
+DFF     @INTERRUPT_AREA
+E7F     @INTERRUPT_AREA
+EFF     @INTERRUPT_AREA
+F7F     @INTERRUPT_AREA
+FFF     @INTERRUPT_AREA
+
+ROM Allocation:
+00004F  INI_LCD.call
+000053  INI_LCD.data
+000057  RTCC_isr
+000080  @const652.call
+00008F  @delay_ms1
+0000A3  lcd_envia_nibble
+0000D4  lcd_envia_byte
+0000FD  lcd_ini
+000148  @ITOF
+000167  @MULFF
+0001DE  @ADDFF
+000324  @SFTOI
+000345  @MULS1616
+000377  @SITOF
+00039E  lcd_escreve
+0003BF  lcd_pos_xy
+0003E1  @PSTRINGCN7_613
+00045B  @PRINTF_LD_613
+0004DF  @PRINTF_LD_659
+000556  @SPRINTF
+000570  @PSTRINGR_1
+000800  MAIN
+000800  @cinit1
+000824  @cinit2
+
+Project Directory:
+    C:\Users\André\Documents\Engenharia Automação\6 semestre\Microcontroladores\Projetos\Temperatura\
+
+Project Files:
+    Temperatura.c                                           [07-dez-21 16:04  CRC=E47DE1F3]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h [08-set-15 15:15  CRC=B168AC0E]
+    mod_lcd.c                                               [23-out-21 15:19  CRC=4ADD02A2]
+
+Source signature=2BA09345
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=6A8D
+
+Units:
+    Temperatura (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   Temperatura.xsym
+    Errors:      Temperatura.err
+    Ext Symbols: Temperatura.esym
+    INHX8:       Temperatura.hex
+    Symbols:     Temperatura.sym
+    List:        Temperatura.lst
+    Debug/COFF:  Temperatura.cof
+    Project:     Temperatura.ccspjt
+    Call Tree:   Temperatura.tre
+    Statistics:  Temperatura.STA

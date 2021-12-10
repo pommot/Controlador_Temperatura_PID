@@ -1,0 +1,104 @@
+[PROJECT]
+Target=Temperatura.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.049
+Compiler=PCM
+CCSVersion=5.049
+[Target Data]
+FileList=Temperatura.c
+[Directories]
+Include=
+[C:\Users\André\Documents\Engenharia Automação\6 semestre\Microcontroladores\Projetos\Temperatura\Temperatura]
+Type=4
+[mru-list]
+1=Temperatura.c
+
+[ProjectLog]
+Days=5
+D1=30-11-2021
+D1_L=22
+D1_L1=[48787]Project Opened.
+D1_L2=[48794]Started Editing.
+D1_L3=[50703]Stopped Editing.
+D1_L4=[50837]Started Editing.
+D1_L5=[51380]Stopped Editing.
+TotalEdit=107
+TotalDebug=0
+D1_E=83
+D1_D=0
+D1_L6=[51663]Project Closed.
+D1_L7=[51969]Project Opened.
+D1_L8=[52726]Project Closed.
+D1_L9=[52745]Project Opened.
+D1_L10=[53313]Started Editing.
+D1_L11=[54740]Stopped Editing.
+D1_L12=[54817]Started Editing.
+D1_L13=[55137]Stopped Editing.
+D1_L14=[55217]Started Editing.
+D1_L15=[55520]Stopped Editing.
+D1_L16=[58383]Started Editing.
+D1_L17=[58754]Stopped Editing.
+D1_L18=[73130]Started Editing.
+D1_L19=[74615]Stopped Editing.
+D1_L20=[75045]Started Editing.
+D1_L21=[76034]Stopped Editing.
+D1_L22=[77609]Project Closed.
+D2=04-12-2021
+D2_L=13
+D2_L1=[35613]Project Opened.
+D2_L2=[35632]Started Editing.
+D2_L3=[36187]Stopped Editing.
+D2_E=10
+D2_D=0
+D2_L4=[36187]Project Closed.
+D2_L5=[36215]Project Opened.
+D2_L6=[36258]Started Editing.
+D2_L7=[36558]Stopped Editing.
+D2_L8=[37712]Started Editing.
+D2_L9=[38056]Stopped Editing.
+D2_L10=[41400]Started Editing.
+D2_L11=[41741]Stopped Editing.
+D2_L12=[61314]Started Editing.
+D2_L13=[61668]Stopped Editing.
+D3=05-12-2021
+D3_L=9
+D3_L1=[41843]Started Editing.
+D3_L2=[42243]Stopped Editing.
+D3_L3=[43916]Started Editing.
+D3_L4=[44296]Stopped Editing.
+D3_E=10
+D3_D=0
+D3_L5=[45668]Project Closed.
+D3_L6=[74943]Project Opened.
+D3_L7=[74963]Started Editing.
+D3_L8=[75450]Stopped Editing.
+D3_L9=[75603]Project Closed.
+D4=07-12-2021
+D4_L=5
+D4_L1=[56235]Project Opened.
+D4_L2=[56252]Started Editing.
+D4_L3=[56766]Stopped Editing.
+D4_L4=[57836]Started Editing.
+D4_L5=[58138]Stopped Editing.
+D5=09-12-2021
+D5_L=3
+D5_L1=[39147]Started Editing.
+D5_L2=[39447]Stopped Editing.
+D5_E=4
+D5_D=0
+D5_L3=[52099]Project Closed.
+
+[Opened Files]
+1=Temperatura.c
+t1=104
+Count=2
+2=Temperatura.h
+t2=1
+[Temperatura.c]
+Type=4
+
+[defines]
+buildcount=40
+[Units]
+Count=1
+1=Temperatura (main)
